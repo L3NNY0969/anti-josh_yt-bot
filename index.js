@@ -7,8 +7,8 @@ bot.on("message", msg => {
     if (!msg.content.startsWith(prefix.length) || msg.author.bot) return;
     const args = msg.content.slice(prefix.length).split(" ");
     const command = args.shift().toLowerCase();
-    if (command === "something") {
-        // Do someting
+    if (command === "truth") return msg.channel.send('Josh gay. ');
+
     }
 });
 
