@@ -3,6 +3,10 @@ const prefix = "js.";
 
 bot.on("ready", () => console.log("Yea, im online now."));
 
+client.on("ready", () => {
+    client.user.setStatus("dnd");
+});
+
 bot.on("message", msg => {
     if (!msg.content.startsWith(prefix.length) || msg.author.bot) return;
     const args = msg.content.slice(prefix.length).split(" ");
