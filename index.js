@@ -1,5 +1,5 @@
 const bot = new (require("discord.js").Client)();
-const prefix = "aj.";
+const prefix = "js.";
 
 bot.on("ready", () => console.log("Yea, im online now."));
 
