@@ -9,7 +9,6 @@ bot.on("message", msg => {
     const command = args.shift().toLowerCase();
     if (command === "ping") return msg.channel.send('Pong?');
 
-    }
 });
 
 bot.login(process.env.TOKEN);
